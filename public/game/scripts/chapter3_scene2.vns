@@ -1,0 +1,178 @@
+# ============================================================
+# 红楼职场梦 - 第三回 场景二
+# 大观园团建风云 · 烧烤与真心话
+# ============================================================
+
+[fade in color=#000000 duration=1000]
+
+[bg park with fade duration=800]
+[bgm emotional volume=0.3 fadeIn=1000]
+[weather fireflies intensity=0.4]
+
+: 傍晚时分，夕阳西下。
+
+: 大观园主题公园的草坪上，烧烤架已经支好了。
+
+: 空气中弥漫着烤肉的香气和欢笑声。
+
+[show xifeng at left with fade]
+[show liulaolao at right with fade]
+
+xifeng(happy): "来来来！烤串好了！"
+
+liulaolao(happy): "这烤羊肉串真香！比我们村集市上的还好吃！"
+
+xifeng(laugh): "那当然！这可是我特意请的新疆师傅！"
+
+[show baoyu at center with fade]
+
+baoyu(happy): "凤姐姐，有没有烤红薯？"
+
+xifeng(scheming): "烤红薯？你以为这是农家乐？"
+
+liulaolao(happy): "我带了！我从家里带了一袋红薯！"
+
+baoyu(happy): "刘姥姥万岁！"
+
+[hide xifeng with fade]
+[hide liulaolao with fade]
+
+# --- Evening chat ---
+
+: 夜幕降临，萤火虫在草丛间飞舞。
+
+: 大家围坐在一起，有人提议玩真心话大冒险。
+
+[show daiyu at left with fade]
+[show baochai at right with fade]
+[show baoyu at center with fade]
+
+baochai(smile): "宝玉，真心话——你来公司这段时间，最大的感受是什么？"
+
+baoyu(thinking): "最大的感受啊……"
+
+[choice]
+  "虽然很累，但感觉找到了归属感" -> choice_heartfelt
+  "感觉自己是全公司最菜的" -> choice_humble
+  "食堂真的很好吃" -> choice_funny
+[/choice]
+
+[label choice_heartfelt]
+[set daiyu_affection += 3]
+[set baochai_affection += 3]
+baoyu(happy): "虽然每天都被林工骂，被凤姐姐催——"
+baoyu(normal): "但是大家都在认真做事，互相帮助。"
+baoyu(happy): "这种感觉，比一个人在家打游戏好多了。"
+daiyu(normal): "……"
+daiyu(smirk): "难得你说了句人话。"
+baochai(happy): "宝玉长大了呢~"
+[jump after_truth]
+
+[label choice_humble]
+[set daiyu_affection += 2]
+baoyu(sad): "我真的什么都不会，每天都在拖大家后腿……"
+daiyu(normal): "知道自己菜就好。"
+daiyu(cold): "不过……"
+daiyu(normal): "你最近的代码确实有进步。虽然还是很烂。"
+baoyu(surprised): "真的吗？！"
+daiyu(sarcastic): "从'惨不忍睹'进步到了'勉强能看'。"
+baochai(laugh): "黛玉这是在夸你呢，宝玉！"
+daiyu(angry): "我没有！"
+[jump after_truth]
+
+[label choice_funny]
+[set liulaolao_impression += 2]
+baoyu(happy): "食堂的红烧狮子头，我能吃一辈子！"
+baochai(laugh): "你来公司就是为了吃的？"
+daiyu(sarcastic): "果然是个废物。"
+baoyu(happy): "嘿嘿，开玩笑的啦~"
+[jump after_truth]
+
+[label after_truth]
+
+: 轮到林黛玉了。
+
+baochai(smile): "黛玉，真心话——你为什么选择做程序员？"
+
+daiyu(thinking): "……"
+
+daiyu(normal): "因为代码不会骗人。"
+
+daiyu(cold): "你写对了就是对了，写错了就是错了。"
+
+daiyu(normal): "不像人心那么复杂。"
+
+[wait 500]
+
+daiyu(smirk): "而且debug的时候，有一种把世界的错误一个个修正的感觉。"
+
+daiyu(normal): "虽然bug永远修不完就是了。"
+
+baoyu(thinking): "林工……"
+
+baochai(smile): "说得真好。"
+
+: 一阵微风吹过，萤火虫在夜空中画出点点光芒。
+
+: 这一刻，没有KPI，没有deadline，没有bug。
+
+: 只有星空下的几个年轻人，和烤红薯的香气。
+
+[wait 800]
+
+# --- Xifeng's announcement ---
+
+[show xifeng at far_right with fade]
+
+xifeng(scheming): "咳咳！趁大家都在，我宣布一件事！"
+
+xifeng(serious): "下个月就是年终了。"
+
+xifeng(normal): "公司决定举办年终述职大会。"
+
+xifeng(scheming): "每个部门都要上台汇报今年的成果。"
+
+daiyu(cold): "又来了。"
+
+baochai(thinking): "年终述职啊……"
+
+xifeng(angry): "而且！贾政说了——"
+
+xifeng(serious): "表现最差的部门，年终奖减半！"
+
+[shake screen intensity=3 duration=300]
+
+baoyu(surprised): "什么？！"
+
+daiyu(angry): "年终奖减半？！"
+
+baochai(serious): "这也太……"
+
+xifeng(scheming): "所以，从明天开始——"
+
+xifeng(angry): "给我加班！冲业绩！"
+
+: 美好的团建之夜，就这样被一个噩耗打破了。
+
+: 萤火虫还在飞舞，但大家的心情已经沉到了谷底。
+
+baoyu(sad): "我的年终奖……我还指望它买新游戏机呢……"
+
+daiyu(cold): "你有年终奖？你才来几个月？"
+
+baoyu(cry): "对哦……"
+
+[hide daiyu with fade]
+[hide baochai with fade]
+[hide baoyu with fade]
+[hide xifeng with fade]
+
+[weather clear]
+
+[fade out color=#000000 duration=2000]
+
+[achievement unlock "team_building" title="团魂" desc="参加了荣国府科技第一次团建"]
+
+[stop bgm fadeOut=1500]
+
+[jump chapter4_scene1]

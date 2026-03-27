@@ -1,0 +1,215 @@
+# ============================================================
+# 红楼职场梦 - 第二回 场景二
+# 刘姥姥参观数据中心 · 投资谈判
+# ============================================================
+
+[fade in color=#000000 duration=1000]
+
+[bg meeting_room with fade duration=800]
+[bgm tension volume=0.3 fadeIn=1000]
+
+: 参观结束后，众人来到了会议室。
+
+: 这是决定荣国府科技命运的关键时刻——投资谈判。
+
+[show jiazheng at left with fade]
+[show xifeng at center with fade]
+[show liulaolao at right with fade]
+
+jiazheng(serious): "刘女士，感谢您百忙之中来参观我们公司。"
+
+liulaolao(happy): "叫我刘姥姥就行！别整那些虚的！"
+
+jiazheng(normal): "好的……刘姥姥。我是贾政，公司CEO。"
+
+jiazheng(serious): "下面由我来介绍一下我们的商业计划——"
+
+: 贾政打开了PPT。
+
+: 第一页：荣国府科技——百年传承，科技创新。
+
+: 配图是一张PS过的贾府大门照片，门匾被P成了"荣国府科技有限公司"。
+
+liulaolao(confused): "这门口咋这么眼熟呢？跟电视里演的似的。"
+
+xifeng(scheming): "那是我们的企业文化——传统与现代的结合！"
+
+jiazheng(serious): "我们的核心产品'大观园'社交平台——"
+
+jiazheng(normal): "预计用户规模可达5000万，年营收——"
+
+liulaolao(confused): "等等等等。"
+
+liulaolao(normal): "你先告诉我，你们现在有多少用户？"
+
+: 全场沉默。
+
+[wait 800]
+
+jiazheng(normal): "目前……还在内测阶段。"
+
+xifeng(scheming): "内测用户有……"
+
+xifeng(normal): "……12个。"
+
+liulaolao(confused): "12个？"
+
+xifeng(scheming): "都是公司员工！非常忠实的种子用户！"
+
+liulaolao(normal): "也就是说，除了你们自己，没人用？"
+
+[wait 500]
+
+jiazheng(disappointed): "……"
+
+xifeng(laugh): "哈哈，刘姥姥您真幽默！"
+
+xifeng(scheming): "这不是还没正式上线嘛！上线之后肯定——"
+
+liulaolao(normal): "行了行了，我问你们几个问题。"
+
+liulaolao(confused): "第一，你们靠什么赚钱？"
+
+jiazheng(serious): "广告收入、会员订阅、虚拟礼物——"
+
+liulaolao(normal): "第二，你们的竞争对手是谁？"
+
+xifeng(normal): "微信、微博、小红书……"
+
+liulaolao(amazed): "你们要跟这些大家伙竞争？"
+
+xifeng(scheming): "我们走差异化路线——"
+
+liulaolao(normal): "第三，也是最重要的——"
+
+liulaolao(confused): "你们公司账上还有多少钱？"
+
+: 又是一阵沉默。
+
+[wait 1000]
+
+jiazheng(disappointed): "……够发三个月工资的。"
+
+[sfx gasp]
+
+liulaolao(amazed): "三个月？！"
+
+xifeng(scheming): "所以我们才需要融资嘛！"
+
+: 刘姥姥沉思了一会儿。
+
+liulaolao(thinking): "……"
+
+[wait 800]
+
+liulaolao(normal): "我再问最后一个问题。"
+
+liulaolao(happy): "你们公司食堂好不好吃？"
+
+jiazheng(surprised): "啊？"
+
+xifeng(surprised): "食堂？"
+
+liulaolao(normal): "一个公司食堂好不好吃，就能看出这个公司有没有良心。"
+
+liulaolao(happy): "食堂好吃，说明老板对员工好。老板对员工好，员工才肯卖力干活。"
+
+liulaolao(laugh): "这是我种了一辈子地悟出来的道理！"
+
+xifeng(scheming): "我们公司的食堂——"
+
+xifeng(happy): "那可是请了五星级酒店的大厨！"
+
+: 其实就是贾府的老厨子，但做菜确实好吃。
+
+liulaolao(happy): "那行！带我去尝尝！"
+
+[hide jiazheng with fade]
+[hide xifeng with fade]
+[hide liulaolao with fade]
+
+# --- Cafeteria scene ---
+
+[bg restaurant with dissolve duration=600]
+[stop bgm fadeOut=800]
+[bgm comedy volume=0.4 fadeIn=800]
+
+: 公司食堂。
+
+: 说是食堂，其实更像是一个中式餐厅。
+
+: 红木桌椅，青花瓷碗碟，墙上挂着山水画。
+
+[show liulaolao at center with fade]
+
+liulaolao(amazed): "哎呦！这食堂比我们村的婚宴还气派！"
+
+[show xifeng at left with fade]
+
+xifeng(happy): "那当然！这可是我亲自设计的！"
+
+: 菜端上来了——
+
+: 红烧狮子头、清蒸鲈鱼、蟹粉豆腐、翡翠白玉汤……
+
+liulaolao(amazed): "我的天！这是食堂？这是满汉全席吧！"
+
+[show baoyu at right with fade]
+
+baoyu(happy): "刘姥姥！这个红烧狮子头最好吃了！"
+
+liulaolao(happy): "好好好！我尝尝！"
+
+[wait 300]
+
+liulaolao(laugh): "好吃！真好吃！"
+
+liulaolao(happy): "就冲这个食堂——"
+
+liulaolao(normal): "我投了！"
+
+[sfx applause]
+
+xifeng(happy): "真的？！"
+
+jiazheng(surprised): "刘姥姥，您说真的？"
+
+[show jiazheng at far_left with fade]
+
+liulaolao(happy): "我刘姥姥说话算话！"
+
+liulaolao(normal): "不过我有个条件——"
+
+xifeng(scheming): "您说！什么条件都行！"
+
+liulaolao(happy): "我要当你们的顾问！每周来吃一次食堂！"
+
+: 全场哄笑。
+
+[sfx laugh]
+
+xifeng(laugh): "成交！"
+
+baoyu(happy): "太好了！公司有救了！"
+
+: 就这样，荣国府科技有限公司获得了第一笔天使投资。
+
+: 投资金额：500万。
+
+: 投资原因：食堂好吃。
+
+: 这大概是中国互联网史上最离谱的投资理由了。
+
+[hide jiazheng with fade]
+[hide xifeng with fade]
+[hide liulaolao with fade]
+[hide baoyu with fade]
+
+[fade out color=#000000 duration=1500]
+
+[achievement unlock "angel_investment" title="天使来了" desc="成功获得刘姥姥的天使投资"]
+
+[stop bgm fadeOut=1000]
+[stop bgs fadeOut=500]
+
+[jump chapter3_scene1]

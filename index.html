@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Visual Novel Engine</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+    }
+
+    #vn-game {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    /* Loading screen */
+    #vn-loading {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #0a0a1a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      color: #aabbdd;
+      font-family: serif;
+      transition: opacity 0.5s ease;
+    }
+
+    #vn-loading h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      letter-spacing: 4px;
+    }
+
+    .loading-bar {
+      width: 200px;
+      height: 3px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .loading-bar-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #4488ff, #88ccff);
+      border-radius: 2px;
+      animation: loading 2s ease-in-out infinite;
+    }
+
+    @keyframes loading {
+      0% { width: 0%; }
+      50% { width: 80%; }
+      100% { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading screen -->
+  <div id="vn-loading">
+    <h2>Loading...</h2>
+    <div class="loading-bar">
+      <div class="loading-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- Game container -->
+  <div id="vn-game"></div>
+
+  <script type="module" src="/src/main.ts"></script>
+  <script>
+    // Hide loading screen when engine is ready
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const loading = document.getElementById('vn-loading');
+        if (loading) {
+          loading.style.opacity = '0';
+          setTimeout(() => loading.remove(), 500);
+        }
+      }, 500);
+    });
+  </script>
+</body>
+</html>

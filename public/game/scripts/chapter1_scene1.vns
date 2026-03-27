@@ -1,0 +1,240 @@
+# ============================================================
+# 红楼职场梦 - 第一回 场景一
+# 荣国府科技有限公司 · 新人入职
+# ============================================================
+
+[chapter "第一回" subtitle="荣国府科技有限公司" duration=4000]
+
+[fade in color=#000000 duration=1500]
+
+# --- Opening narration ---
+
+: 话说这贾宝玉，本是女娲补天所遗之灵石转世。
+
+: 然而时过境迁，灵石也得跟上时代——
+
+: 2024年的灵石，不修仙，修代码。
+
+[wait 800]
+
+: 且说这日，贾宝玉被其父贾政一脚踹出家门——
+
+: 不是因为不肯读书，而是因为三十岁了还在家里打游戏。
+
+[sfx door_open]
+[bg office_lobby with fade duration=1000]
+[bgs office_ambience volume=0.3]
+
+: 荣国府科技有限公司——一家号称"百年老字号"的互联网创业公司。
+
+: 公司口号："传承经典，颠覆未来。"
+
+: 实际上就是贾家把祖宅改成了写字楼。
+
+[wait 500]
+
+[show xifeng at center with fade]
+
+xifeng(scheming): "哟！这不是宝兄弟嘛！"
+
+xifeng(laugh): "听说你终于肯出来上班了？你爹在家群里发了三百条消息庆祝呢！"
+
+[show baoyu at left with fade]
+
+baoyu(lazy): "凤姐姐……我是被逼的……"
+
+baoyu(sad): "我爹说再不上班就把我的游戏机全砸了……"
+
+xifeng(smirk): "得了吧！三十岁的人了，还叫'被逼的'？"
+
+xifeng(serious): "我跟你说，我现在是公司的运营副总裁，你归我管。"
+
+xifeng(scheming): "在这儿，我说一不二。你要是敢摸鱼——"
+
+[shake screen intensity=3 duration=300]
+
+xifeng(angry): "我让你体验什么叫'996是福报'！"
+
+baoyu(surprised): "是是是！凤姐姐说了算！"
+
+[sfx notification]
+
+xifeng(normal): "行了，先带你认识认识同事。"
+
+[hide xifeng with fade]
+[hide baoyu with fade]
+
+# --- Meet Lin Daiyu ---
+
+[bg office_open with dissolve duration=800]
+[bgs keyboard_typing volume=0.2]
+
+: 开放式办公区里，键盘声此起彼伏。
+
+: 角落里，一个纤弱的身影正对着三块显示屏疯狂敲代码。
+
+[show daiyu at center with fade]
+
+: 她的工位上贴着一张纸条：
+
+: "代码如诗，bug如命。——林黛玉"
+
+[show xifeng at right with fade]
+[show baoyu at left with fade]
+
+xifeng(happy): "黛玉！来来来，给你介绍个新同事！"
+
+daiyu(cold): "……"
+
+daiyu(normal): "我正在debug，等一下。"
+
+[wait 500]
+
+daiyu(angry): "谁！谁又在master分支上直接push了！"
+
+[shake screen intensity=2 duration=200]
+
+xifeng(scheming): "咳咳……那个……先不说这个。"
+
+xifeng(normal): "这是贾宝玉，新来的……呃……"
+
+xifeng(thinking): "对了宝玉，你会什么？"
+
+baoyu(thinking): "我……我会写诗？"
+
+[sfx crash]
+
+daiyu(sarcastic): "写诗？你以为这是大观园诗社？"
+
+daiyu(cold): "这里是技术部，我们用的是TypeScript，不是七言律诗。"
+
+baoyu(surprised): "TypeScript？那是什么？能吃吗？"
+
+daiyu(angry): "……"
+
+xifeng(laugh): "哈哈哈哈！行了行了，宝玉你先做初级前端吧。"
+
+xifeng(scheming): "黛玉，你就当他师父，带带他。"
+
+daiyu(sad): "我上辈子是造了什么孽……"
+
+baoyu(happy): "林妹妹！请多指教！"
+
+daiyu(sarcastic): "别叫我林妹妹。在公司，叫我林工。"
+
+[choice]
+  "好的林工！我一定好好学！" -> choice_formal
+  "可是叫林妹妹更亲切嘛~" -> choice_casual
+  "那我叫你黛玉姐姐？" -> choice_weird
+[/choice]
+
+[label choice_formal]
+[set daiyu_affection += 3]
+daiyu(normal): "嗯，算你识相。"
+daiyu(cold): "明天之前把TypeScript基础教程看完，我要检查。"
+baoyu(sad): "这么多……"
+[jump after_daiyu_choice]
+
+[label choice_casual]
+[set daiyu_affection += 1]
+daiyu(angry): "你再叫一次试试？"
+[shake screen intensity=4 duration=300]
+daiyu(sarcastic): "信不信我把你的git权限全删了？"
+baoyu(surprised): "对不起对不起！林工！林工！"
+[jump after_daiyu_choice]
+
+[label choice_weird]
+[set daiyu_affection -= 2]
+daiyu(angry): "……"
+daiyu(cold): "王熙凤，你把这个人带走，我不带了。"
+xifeng(laugh): "哈哈哈哈！宝玉你可真行！"
+xifeng(normal): "快道歉！"
+baoyu(sad): "对不起林工……"
+[jump after_daiyu_choice]
+
+[label after_daiyu_choice]
+
+[hide daiyu with fade]
+[hide xifeng with fade]
+[hide baoyu with fade]
+
+# --- Meet Xue Baochai ---
+
+[bg meeting_room with slide_left duration=600]
+
+: 会议室里，一位端庄大方的女子正在白板上画产品原型图。
+
+: 她画的流程图整整齐齐，每个节点都标注了详细说明。
+
+: 这专业程度，让人不禁怀疑她上辈子是不是就在做产品经理。
+
+[show baochai at center with fade]
+
+baochai(smile): "你好，你就是新来的宝玉吧？"
+
+baochai(normal): "我是薛宝钗，产品经理。大家都叫我薛总监。"
+
+[show baoyu at left with fade]
+
+baoyu(happy): "宝姐姐！好久不见！"
+
+baochai(thinking): "在公司请叫我薛总监。"
+
+baochai(smile): "不过私下里叫什么都行啦~"
+
+baoyu(normal): "薛总监，你在画什么？"
+
+baochai(confident): "新项目——'大观园'社交平台。"
+
+baochai(normal): "定位是高端文艺社交，主打'诗词歌赋交友'。"
+
+baoyu(surprised): "这不就是我的强项吗！"
+
+baochai(smile): "所以说嘛，你来得正好。"
+
+baochai(serious): "不过——"
+
+baochai(normal): "需求文档我已经写了200页了，你先看完再说。"
+
+baoyu(sad): "两……两百页？"
+
+baochai(confident): "放心，我还在写，估计最终版会到500页。"
+
+[sfx gasp]
+
+baoyu(surprised): "五百页！"
+
+baochai(smile): "产品经理的需求文档，就像《红楼梦》一样——"
+
+baochai(confident): "博大精深，每读一遍都有新的理解。"
+
+baoyu(thinking): "我怎么觉得这是在给我挖坑……"
+
+[hide baochai with fade]
+[hide baoyu with fade]
+
+# --- End of Scene 1 ---
+
+[bg office_lobby with fade duration=800]
+
+: 就这样，贾宝玉在荣国府科技有限公司的第一天开始了。
+
+: 运营副总裁王熙凤——铁腕管理，笑里藏刀。
+
+: 高级前端工程师林黛玉——代码如诗，脾气如火。
+
+: 产品总监薛宝钗——温柔大方，需求文档500页。
+
+: 这个公司，比大观园还热闹。
+
+[wait 500]
+
+: 而贾宝玉不知道的是——
+
+: 他的噩梦，才刚刚开始。
+
+[fade out color=#000000 duration=1500]
+
+[achievement unlock "chapter1_start" title="入职第一天" desc="成功入职荣国府科技有限公司"]
+
+[jump chapter1_scene2]

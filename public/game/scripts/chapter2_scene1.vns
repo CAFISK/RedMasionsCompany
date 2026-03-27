@@ -1,0 +1,241 @@
+# ============================================================
+# 红楼职场梦 - 第二回 场景一
+# 刘姥姥参观数据中心 · 投资人驾到
+# ============================================================
+
+[chapter "第二回" subtitle="刘姥姥参观数据中心" duration=4000]
+
+[fade in color=#000000 duration=1000]
+
+[bg office_lobby with fade duration=800]
+[bgm chinese_classical volume=0.4 fadeIn=1000]
+[bgs office_ambience volume=0.2]
+
+: 话说这荣国府科技有限公司，虽然名头响亮，但账上的钱——
+
+: 就跟贾宝玉的技术水平一样，少得可怜。
+
+: 于是贾政决定引入外部投资。
+
+: 而这位投资人，就是——
+
+[sfx door_open]
+
+[show liulaolao at center with fade]
+
+liulaolao(amazed): "哎呦喂！这就是你们说的那个……互联网公司？"
+
+liulaolao(confused): "咋跟我想的不一样呢？我以为得有好多电线呢！"
+
+[show xifeng at right with fade]
+
+xifeng(happy): "刘姥姥！欢迎欢迎！"
+
+xifeng(scheming): "您可是我们最重要的天使投资人！"
+
+liulaolao(happy): "天使？我可不是天使，我就是个种地的老太太！"
+
+liulaolao(laugh): "不过我那块地被征收了，赔了不少钱，想找个地方投投。"
+
+xifeng(smile): "您来对地方了！我们公司前景一片光明！"
+
+xifeng(scheming): "走，我带您参观参观！"
+
+# --- Tour begins ---
+
+[hide liulaolao with fade]
+[hide xifeng with fade]
+
+[bg office_open with dissolve duration=600]
+
+: 王熙凤带着刘姥姥来到了开放式办公区。
+
+[show xifeng at left with fade]
+[show liulaolao at center with fade]
+
+liulaolao(amazed): "这么多人对着亮板子（显示器）戳戳戳的，都在干啥呢？"
+
+xifeng(confident): "他们在写代码！就是……呃……教电脑干活的咒语。"
+
+liulaolao(confused): "咒语？跟那个……哈利波特似的？"
+
+xifeng(laugh): "差不多差不多！"
+
+[show daiyu at right with fade]
+
+: 这时，刘姥姥注意到了角落里的林黛玉。
+
+liulaolao(amazed): "哎呦，这姑娘长得真俊！就是太瘦了，得多吃点！"
+
+daiyu(cold): "……"
+
+liulaolao(happy): "姑娘，你在写啥咒语呢？"
+
+daiyu(sarcastic): "我在写一个分布式缓存系统的一致性哈希算法。"
+
+liulaolao(confused): "……"
+
+liulaolao(confused): "啥？"
+
+daiyu(cold): "就是……让电脑记东西记得更快。"
+
+liulaolao(happy): "哦！就跟我记菜价似的！白菜两块三，萝卜一块八——"
+
+daiyu(angry): "完全不一样！"
+
+xifeng(laugh): "哈哈哈！走走走，刘姥姥，我们去看看别的！"
+
+[hide daiyu with fade]
+
+# --- Server room ---
+
+[hide xifeng with fade]
+[hide liulaolao with fade]
+
+[bg server_room with slide_left duration=600]
+
+: 服务器机房。
+
+: 一排排闪烁着绿光的机柜整齐排列，嗡嗡声不绝于耳。
+
+[show xifeng at left with fade]
+[show liulaolao at right with fade]
+
+liulaolao(amazed): "我的天老爷！这些大铁柜子都是啥？"
+
+xifeng(confident): "这是服务器！我们公司的命根子！"
+
+xifeng(normal): "所有数据都存在这里面。"
+
+liulaolao(confused): "数据？啥数据？"
+
+xifeng(scheming): "就是……用户的信息啊，聊天记录啊，照片啊……"
+
+liulaolao(amazed): "这么小的柜子能装这么多东西？"
+
+liulaolao(happy): "比我家那个大衣柜还能装！"
+
+xifeng(laugh): "可不是嘛！"
+
+: 刘姥姥好奇地伸手去摸服务器。
+
+[sfx notification]
+
+xifeng(angry): "别摸别摸！这个摸不得！"
+
+liulaolao(surprised): "咋了？烫手？"
+
+xifeng(serious): "摸坏了整个公司就瘫痪了！"
+
+liulaolao(confused): "这么金贵？那得值多少钱？"
+
+xifeng(scheming): "一台大概……三十万吧。"
+
+liulaolao(amazed): "三十万！我那块地才赔了——"
+
+liulaolao(confused): "等等，这一排有多少台？"
+
+xifeng(smile): "四十台。"
+
+[wait 300]
+
+liulaolao(amazed): "四十台……三十万……"
+
+liulaolao(confused): "一千……一千二百万？！"
+
+[shake screen intensity=3 duration=300]
+
+liulaolao(amazed): "我的老天爷！这些铁柜子加起来能买我们整个村了！"
+
+xifeng(scheming): "所以说嘛，互联网行业，前景广阔！"
+
+xifeng(confident): "您投资我们，绝对不亏！"
+
+[show baoyu at center with fade]
+
+: 这时，贾宝玉不知从哪儿冒了出来。
+
+baoyu(happy): "凤姐姐！这位老人家是谁呀？"
+
+xifeng(normal): "这是刘姥姥，我们的投资人。"
+
+xifeng(scheming): "宝玉，你来给刘姥姥讲讲我们的产品。"
+
+baoyu(surprised): "我？我讲？"
+
+xifeng(angry): "对，你讲。就当是锻炼锻炼。"
+
+baoyu(thinking): "好吧……"
+
+baoyu(normal): "刘姥姥您好！我们正在做一个社交平台，叫'大观园'。"
+
+liulaolao(happy): "大观园？好名字！跟那个……电视剧里的似的！"
+
+baoyu(happy): "对对对！就是那个大观园！"
+
+baoyu(normal): "我们的平台主打诗词歌赋交友——"
+
+liulaolao(confused): "诗词歌赋？年轻人还玩这个？"
+
+baoyu(thinking): "呃……"
+
+liulaolao(normal): "我孙子天天就知道刷那个……抖什么来着？"
+
+liulaolao(happy): "抖音！对，抖音！"
+
+liulaolao(confused): "你们这个能比抖音好玩？"
+
+baoyu(sad): "这个……"
+
+xifeng(scheming): "当然能！我们走的是差异化路线！"
+
+xifeng(confident): "高端市场，蓝海战略！"
+
+liulaolao(confused): "蓝海？哪个海？我只知道渤海。"
+
+xifeng(laugh): "不是那个海……算了，就是说竞争少！"
+
+[choice]
+  "刘姥姥，我给您演示一下我们的产品原型！" -> choice_demo
+  "刘姥姥，要不我给您写首诗？" -> choice_poem
+  "（偷偷溜走让凤姐姐自己应付）" -> choice_escape
+[/choice]
+
+[label choice_demo]
+[set liulaolao_impression += 3]
+baoyu(happy): "您看，这是我们的界面设计——"
+liulaolao(amazed): "哎呦，这花花绿绿的还挺好看！"
+liulaolao(happy): "就是字太小了，我看不清！"
+baoyu(thinking): "这个……我们可以加个老年模式……"
+xifeng(scheming): "对对对！银发经济！又一个卖点！"
+[jump after_demo_choice]
+
+[label choice_poem]
+[set liulaolao_impression += 5]
+baoyu(happy): "刘姥姥，我即兴给您来一首！"
+baoyu(normal): "姥姥驾临荣国府，服务器前笑开颜。"
+baoyu(happy): "铁柜虽小藏乾坤，一朝投资赚大钱！"
+liulaolao(laugh): "哈哈哈哈！好！好！这小伙子有才！"
+liulaolao(happy): "虽然我听不太懂，但感觉很厉害的样子！"
+xifeng(scheming): "看看，我们公司人才济济吧！"
+[jump after_demo_choice]
+
+[label choice_escape]
+[set liulaolao_impression -= 2]
+[set xifeng_anger += 5]
+: 贾宝玉趁两人不注意，悄悄溜走了。
+xifeng(angry): "贾宝玉！你给我回来！"
+: 然而宝玉已经跑远了。
+xifeng(scheming): "呵呵……回头再收拾你。"
+liulaolao(laugh): "这孩子，跟我孙子一个德行！"
+[jump after_demo_choice]
+
+[label after_demo_choice]
+
+[hide baoyu with fade]
+[hide xifeng with fade]
+[hide liulaolao with fade]
+
+[fade out color=#000000 duration=1000]
+
+[jump chapter2_scene2]

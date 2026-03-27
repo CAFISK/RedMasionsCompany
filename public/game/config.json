@@ -1,0 +1,198 @@
+{
+  "title": "红楼职场梦",
+  "version": "1.0.0",
+  "author": "VN Engine Studio",
+  "description": "当红楼梦人物穿越到现代互联网公司——一部职场搞笑视觉小说",
+  "resolution": { "width": 1280, "height": 720 },
+  "startScene": "chapter1_scene1",
+  "characters": {
+    "baoyu": {
+      "id": "baoyu",
+      "name": "贾宝玉",
+      "color": "#E74C3C",
+      "sprites": {
+        "expressions": {
+          "normal": "characters/baoyu/normal.png",
+          "happy": "characters/baoyu/happy.png",
+          "sad": "characters/baoyu/sad.png",
+          "angry": "characters/baoyu/angry.png",
+          "surprised": "characters/baoyu/surprised.png",
+          "thinking": "characters/baoyu/thinking.png",
+          "lazy": "characters/baoyu/lazy.png",
+          "cry": "characters/baoyu/cry.png",
+          "nervous": "characters/baoyu/nervous.png"
+        }
+      }
+    },
+    "daiyu": {
+      "id": "daiyu",
+      "name": "林黛玉",
+      "color": "#9B59B6",
+      "sprites": {
+        "expressions": {
+          "normal": "characters/daiyu/normal.png",
+          "happy": "characters/daiyu/happy.png",
+          "sad": "characters/daiyu/sad.png",
+          "angry": "characters/daiyu/angry.png",
+          "sarcastic": "characters/daiyu/sarcastic.png",
+          "cry": "characters/daiyu/cry.png",
+          "cold": "characters/daiyu/cold.png",
+          "smirk": "characters/daiyu/smirk.png"
+        }
+      }
+    },
+    "baochai": {
+      "id": "baochai",
+      "name": "薛宝钗",
+      "color": "#F39C12",
+      "sprites": {
+        "expressions": {
+          "normal": "characters/baochai/normal.png",
+          "happy": "characters/baochai/happy.png",
+          "serious": "characters/baochai/serious.png",
+          "smile": "characters/baochai/smile.png",
+          "thinking": "characters/baochai/thinking.png",
+          "confident": "characters/baochai/confident.png",
+          "laugh": "characters/baochai/laugh.png",
+          "surprised": "characters/baochai/surprised.png"
+        }
+      }
+    },
+    "xifeng": {
+      "id": "xifeng",
+      "name": "王熙凤",
+      "color": "#E91E63",
+      "sprites": {
+        "expressions": {
+          "normal": "characters/xifeng/normal.png",
+          "happy": "characters/xifeng/happy.png",
+          "angry": "characters/xifeng/angry.png",
+          "scheming": "characters/xifeng/scheming.png",
+          "laugh": "characters/xifeng/laugh.png",
+          "serious": "characters/xifeng/serious.png",
+          "smirk": "characters/xifeng/smirk.png",
+          "confident": "characters/xifeng/confident.png",
+          "smile": "characters/xifeng/smile.png",
+          "thinking": "characters/xifeng/thinking.png",
+          "surprised": "characters/xifeng/surprised.png"
+        }
+      }
+    },
+    "jiazheng": {
+      "id": "jiazheng",
+      "name": "贾政",
+      "color": "#2C3E50",
+      "sprites": {
+        "expressions": {
+          "normal": "characters/jiazheng/normal.png",
+          "angry": "characters/jiazheng/angry.png",
+          "serious": "characters/jiazheng/serious.png",
+          "disappointed": "characters/jiazheng/disappointed.png",
+          "surprised": "characters/jiazheng/surprised.png"
+        }
+      }
+    },
+    "liulaolao": {
+      "id": "liulaolao",
+      "name": "刘姥姥",
+      "color": "#27AE60",
+      "sprites": {
+        "expressions": {
+          "normal": "characters/liulaolao/normal.png",
+          "happy": "characters/liulaolao/happy.png",
+          "confused": "characters/liulaolao/confused.png",
+          "amazed": "characters/liulaolao/amazed.png",
+          "laugh": "characters/liulaolao/laugh.png",
+          "thinking": "characters/liulaolao/thinking.png",
+          "surprised": "characters/liulaolao/surprised.png"
+        }
+      }
+    },
+    "miaoyu": {
+      "id": "miaoyu",
+      "name": "妙玉",
+      "color": "#1ABC9C",
+      "sprites": {
+        "expressions": {
+          "normal": "characters/miaoyu/normal.png",
+          "cold": "characters/miaoyu/cold.png",
+          "annoyed": "characters/miaoyu/annoyed.png",
+          "smile": "characters/miaoyu/smile.png",
+          "disgusted": "characters/miaoyu/disgusted.png"
+        }
+      }
+    }
+  },
+  "chapters": [
+    {
+      "id": "chapter1",
+      "title": "第一回 荣国府科技有限公司",
+      "scenes": ["chapter1_scene1", "chapter1_scene2"]
+    },
+    {
+      "id": "chapter2",
+      "title": "第二回 刘姥姥参观数据中心",
+      "scenes": ["chapter2_scene1", "chapter2_scene2"]
+    },
+    {
+      "id": "chapter3",
+      "title": "第三回 大观园团建风云",
+      "scenes": ["chapter3_scene1", "chapter3_scene2"]
+    },
+    {
+      "id": "chapter4",
+      "title": "第四回 年终述职大会",
+      "scenes": ["chapter4_scene1"]
+    }
+  ],
+  "defaultSettings": {
+    "textSpeed": 35,
+    "autoSpeed": 3500,
+    "bgmVolume": 0.6,
+    "sfxVolume": 0.8,
+    "voiceVolume": 0.8,
+    "language": "zh-CN"
+  },
+  "assets": {
+    "backgrounds": {
+      "office_lobby": "backgrounds/office_lobby.png",
+      "office_open": "backgrounds/office_open.png",
+      "meeting_room": "backgrounds/meeting_room.png",
+      "ceo_office": "backgrounds/ceo_office.png",
+      "pantry": "backgrounds/pantry.png",
+      "server_room": "backgrounds/server_room.png",
+      "rooftop": "backgrounds/rooftop.png",
+      "park": "backgrounds/park.png",
+      "restaurant": "backgrounds/restaurant.png",
+      "conference_hall": "backgrounds/conference_hall.png",
+      "title_bg": "backgrounds/title_bg.png"
+    },
+    "characters": {},
+    "cg": {},
+    "bgm": {
+      "main_theme": "bgm/main_theme.mp3",
+      "comedy": "bgm/comedy.mp3",
+      "tension": "bgm/tension.mp3",
+      "emotional": "bgm/emotional.mp3",
+      "chinese_classical": "bgm/chinese_classical.mp3"
+    },
+    "bgs": {
+      "office_ambience": "bgs/office_ambience.mp3",
+      "keyboard_typing": "bgs/keyboard_typing.mp3",
+      "rain": "bgs/rain.mp3"
+    },
+    "sfx": {
+      "notification": "sfx/notification.mp3",
+      "phone_ring": "sfx/phone_ring.mp3",
+      "door_open": "sfx/door_open.mp3",
+      "applause": "sfx/applause.mp3",
+      "crash": "sfx/crash.mp3",
+      "ding": "sfx/ding.mp3",
+      "laugh": "sfx/laugh.mp3",
+      "gasp": "sfx/gasp.mp3",
+      "slap_table": "sfx/slap_table.mp3"
+    },
+    "voice": {},
+    "ui": {}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "web-visual-novel-engine",
+  "version": "1.0.0",
+  "description": "A web-based visual novel engine with planner-friendly workflow",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "howler": "^2.2.4",
+    "pixi.js": "^7.3.3"
+  },
+  "devDependencies": {
+    "@types/howler": "^2.2.11",
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  },
+  "license": "MIT"
+}

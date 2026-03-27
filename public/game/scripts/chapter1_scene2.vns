@@ -1,0 +1,267 @@
+# ============================================================
+# 红楼职场梦 - 第一回 场景二
+# 荣国府科技有限公司 · 第一次站会
+# ============================================================
+
+[fade in color=#000000 duration=1000]
+
+[bg meeting_room with fade duration=800]
+[bgm comedy volume=0.4 fadeIn=1000]
+
+: 第二天早上九点半——不对，十点十五。
+
+: 因为荣国府科技的"弹性工作制"，意思是弹性地迟到。
+
+[show xifeng at right with fade]
+
+xifeng(angry): "都几点了！站会都等了半小时了！"
+
+xifeng(serious): "贾宝玉！第一天上班就迟到！"
+
+[show baoyu at left with fade]
+
+baoyu(sad): "对不起凤姐……不是，王总！"
+
+baoyu(lazy): "我昨晚看TypeScript教程看到凌晨三点……"
+
+[show daiyu at center with fade]
+
+daiyu(sarcastic): "看到凌晨三点？那你告诉我，interface和type有什么区别？"
+
+baoyu(thinking): "呃……一个是……接口？一个是……类型？"
+
+daiyu(cold): "废话。具体区别呢？"
+
+baoyu(surprised): "具体……就是……名字不一样？"
+
+[sfx slap_table]
+
+daiyu(angry): "你到底看了什么！"
+
+baoyu(cry): "我看着看着就去刷短视频了……"
+
+xifeng(scheming): "行了行了！开始站会！"
+
+xifeng(normal): "每个人说一下昨天做了什么，今天要做什么，有什么阻塞。"
+
+# --- Standup meeting ---
+
+xifeng(serious): "黛玉，你先来。"
+
+daiyu(normal): "昨天：修了17个bug，review了3个PR，重构了用户模块。"
+
+daiyu(cold): "今天：继续修bug。阻塞：有人在master上直接push了垃圾代码。"
+
+daiyu(angry): "我再说一次——谁干的？"
+
+: 全场沉默。
+
+[wait 800]
+
+xifeng(scheming): "咳……下一个。宝钗？"
+
+[show baochai at far_right with fade]
+
+baochai(confident): "昨天：完成了'大观园'社交平台的PRD第三版修订。"
+
+baochai(smile): "今天：和技术部对需求。"
+
+baochai(normal): "阻塞：需求文档从200页改到了350页，打印机卡纸了。"
+
+daiyu(sarcastic): "350页的需求文档……你是在写需求还是在写小说？"
+
+baochai(thinking): "好的需求文档就应该像《红楼梦》一样面面俱到。"
+
+daiyu(angry): "《红楼梦》还没写完呢！你的需求能写完吗？"
+
+baochai(smile): "放心，我计划下周出终版。"
+
+daiyu(cold): "你上周也是这么说的。"
+
+xifeng(angry): "够了够了！别吵了！"
+
+xifeng(normal): "宝玉，轮到你了。"
+
+baoyu(thinking): "昨天：看了TypeScript教程……的目录。"
+
+baoyu(normal): "今天：打算继续看。"
+
+baoyu(lazy): "阻塞：教程太长了。"
+
+: 全场再次沉默。
+
+[wait 500]
+
+daiyu(sarcastic): "你的阻塞是'教程太长了'？"
+
+daiyu(angry): "那我的阻塞就是'带了一个什么都不会的新人'！"
+
+baoyu(cry): "林工对不起……"
+
+xifeng(laugh): "哈哈哈哈！行了，散会散会！"
+
+xifeng(scheming): "宝玉，今天你的任务——"
+
+xifeng(serious): "给公司官网写一个'关于我们'页面。"
+
+xifeng(normal): "用HTML和CSS就行，不难吧？"
+
+baoyu(happy): "这个我会！我以前在QQ空间装扮过！"
+
+daiyu(cold): "……QQ空间。"
+
+daiyu(sarcastic): "2024年了，你跟我提QQ空间？"
+
+[hide baochai with fade]
+
+# --- Baoyu's first task ---
+
+[bg office_open with dissolve duration=600]
+
+: 贾宝玉坐在工位上，打开了电脑。
+
+: 他盯着VS Code的界面，陷入了沉思。
+
+[show baoyu at center with fade]
+
+baoyu(thinking): "这个黑乎乎的东西……怎么用来着？"
+
+[wait 500]
+
+baoyu(normal): "算了，先写点东西试试。"
+
+: 两个小时后——
+
+[show daiyu at right with fade]
+
+daiyu(normal): "宝玉，写得怎么样了？让我看看。"
+
+baoyu(happy): "写好了！你看！"
+
+: 林黛玉凑过来看了一眼屏幕。
+
+[wait 300]
+
+daiyu(surprised): "……"
+
+daiyu(angry): "你为什么用<marquee>标签让公司名字滚动？！"
+
+daiyu(angry): "为什么背景是五彩渐变色？！"
+
+daiyu(angry): "为什么有一个跟着鼠标走的小星星特效？！"
+
+baoyu(happy): "好看啊！我以前QQ空间就是这么装扮的！"
+
+[shake screen intensity=5 duration=500]
+
+daiyu(angry): "贾宝玉！！！"
+
+[sfx crash]
+
+: 据说那天，整个办公楼都听到了林黛玉的怒吼。
+
+: 而贾宝玉的"关于我们"页面，成为了公司内部的经典笑话。
+
+: 后来被王熙凤截图发到了公司群里，获得了99个"笑哭"表情。
+
+[hide daiyu with fade]
+[hide baoyu with fade]
+
+# --- Evening scene ---
+
+[bg rooftop with fade duration=800]
+[stop bgm fadeOut=1000]
+[bgm emotional volume=0.3 fadeIn=1500]
+
+: 傍晚，天台。
+
+: 贾宝玉一个人坐在天台上，望着远处的城市灯火。
+
+[show baoyu at center with fade]
+
+baoyu(sad): "我果然不适合上班……"
+
+baoyu(thinking): "要不还是回家打游戏算了……"
+
+[show baochai at right with fade]
+
+baochai(smile): "一个人在这儿发呆呢？"
+
+baoyu(surprised): "宝姐……薛总监？"
+
+baochai(normal): "下班了，叫宝姐姐就行。"
+
+baochai(smile): "第一天就被黛玉骂了？别放在心上。"
+
+baochai(thinking): "她就是那个脾气，对谁都一样。"
+
+baoyu(sad): "可是我真的什么都不会……"
+
+baochai(confident): "没有人天生就会的。"
+
+baochai(smile): "你知道黛玉刚来公司的时候，也写过一个bug——"
+
+baochai(normal): "把生产环境的数据库给删了。"
+
+baoyu(surprised): "真的假的？！"
+
+baochai(happy): "真的。那次贾政差点把她开除了。"
+
+baochai(smile): "但她后来成了公司最厉害的工程师。"
+
+baochai(confident): "所以，慢慢来就好。"
+
+[choice]
+  "谢谢宝姐姐，我会努力的！" -> choice_motivated
+  "可是我真的对代码没兴趣……" -> choice_honest
+  "那黛玉删库的事能告诉我细节吗？" -> choice_gossip
+[/choice]
+
+[label choice_motivated]
+[set baochai_affection += 5]
+[set motivation += 3]
+baochai(happy): "这才对嘛！加油！"
+baochai(smile): "有什么不懂的可以来问我，虽然我是产品经理，但我也懂一点技术。"
+baoyu(happy): "好的！谢谢宝姐姐！"
+[jump chapter1_end]
+
+[label choice_honest]
+[set baochai_affection += 2]
+baochai(thinking): "没兴趣也没关系。"
+baochai(smile): "工作嘛，做着做着就有感觉了。"
+baochai(confident): "再说了，你不是会写诗吗？文案策划也需要人才呢。"
+baoyu(thinking): "文案策划……好像也不错？"
+[jump chapter1_end]
+
+[label choice_gossip]
+[set baochai_affection += 1]
+[set daiyu_affection -= 3]
+baochai(surprised): "你……你可别跟她说是我告诉你的啊！"
+baochai(serious): "她要是知道了，我的需求文档就别想过评审了！"
+baoyu(happy): "放心放心！我保密！"
+baochai(thinking): "总觉得你不太靠谱……"
+[jump chapter1_end]
+
+[label chapter1_end]
+
+[hide baochai with fade]
+[hide baoyu with fade]
+
+: 城市的灯火渐渐亮起，贾宝玉的职场生涯第一天就这样结束了。
+
+: 虽然出了不少洋相，但至少——
+
+: 他还没被开除。
+
+[wait 500]
+
+: 然而明天，一位神秘来客的到访，将让整个公司鸡飞狗跳……
+
+[fade out color=#000000 duration=2000]
+
+[achievement unlock "survive_day1" title="活过第一天" desc="在荣国府科技有限公司存活了一天"]
+
+[stop bgm fadeOut=1000]
+[stop bgs fadeOut=500]
+
+[jump chapter2_scene1]

@@ -1,0 +1,609 @@
+# ============================================================
+# 红楼职场梦 - 第四回 场景一
+# 年终述职大会 · 大结局
+# ============================================================
+
+[chapter "第四回" subtitle="年终述职大会" duration=4000]
+
+[fade in color=#000000 duration=1000]
+
+[bg conference_hall with fade duration=1000]
+[bgm tension volume=0.3 fadeIn=1500]
+
+: 一个月后。
+
+: 荣国府科技有限公司年终述职大会。
+
+: 地点：公司一楼大会议厅——其实就是把食堂的桌子搬走，摆上椅子。
+
+: 墙上挂着横幅："2024年度总结暨表彰大会"。
+
+: 横幅是贾宝玉手写的，因为公司没预算请广告公司。
+
+: 不得不说，他的毛笔字确实漂亮——这大概是他唯一拿得出手的技能了。
+
+[show jiazheng at center with fade]
+
+jiazheng(serious): "各位同事，今天是我们荣国府科技的年终述职大会。"
+
+jiazheng(normal): "过去一年，公司经历了很多。"
+
+jiazheng(serious): "有成绩，也有不足。"
+
+jiazheng(disappointed): "尤其是不足，比较多。"
+
+: 台下一片尴尬的沉默。
+
+[wait 500]
+
+jiazheng(serious): "下面，请各部门依次上台汇报。"
+
+jiazheng(normal): "先从运营部开始。"
+
+[hide jiazheng with fade]
+
+# ============================================================
+# Part 1: Wang Xifeng's Operations Report
+# ============================================================
+
+[show xifeng at center with fade]
+
+xifeng(confident): "各位好！我是运营副总裁王熙凤！"
+
+xifeng(happy): "先说好消息——"
+
+xifeng(scheming): "今年我们成功获得了天使投资500万！"
+
+[sfx applause]
+
+xifeng(happy): "公司员工从8人增长到了15人！增长率87.5%！"
+
+xifeng(scheming): "公司食堂满意度调查——100%好评！"
+
+: 台下有人小声说："那是因为只有刘姥姥填了问卷……"
+
+xifeng(serious): "再说……需要改进的地方。"
+
+xifeng(normal): "500万投资，目前已经花了……"
+
+[wait 300]
+
+xifeng(scheming): "480万。"
+
+[sfx gasp]
+
+: 台下一片哗然。
+
+[show jiazheng at right with fade]
+
+jiazheng(angry): "什么？！480万？！才半年就花了480万？！"
+
+xifeng(scheming): "贾总，您听我解释——"
+
+xifeng(normal): "服务器费用120万，办公室装修80万，员工工资150万——"
+
+jiazheng(angry): "那还有130万呢？"
+
+xifeng(scheming): "呃……食堂运营费……60万。"
+
+jiazheng(surprised): "食堂花了60万？！"
+
+xifeng(laugh): "五星级大厨嘛……不便宜的……"
+
+jiazheng(angry): "那还有70万！"
+
+xifeng(normal): "团建费30万，办公用品20万，还有——"
+
+xifeng(scheming): "我的差旅费……20万。"
+
+jiazheng(angry): "你去哪出差了？！"
+
+xifeng(scheming): "考察竞品啊！我去了杭州考察阿里，去了深圳考察腾讯——"
+
+jiazheng(disappointed): "你是去考察还是去旅游的？"
+
+xifeng(laugh): "考察和旅游不冲突嘛~"
+
+[shake screen intensity=3 duration=300]
+
+jiazheng(angry): "王熙凤！！！"
+
+xifeng(scheming): "好了好了，下一个部门！我先下去了！"
+
+[hide xifeng with fade]
+[hide jiazheng with fade]
+
+# ============================================================
+# Part 2: Baochai's Product Report
+# ============================================================
+
+[show baochai at center with fade]
+
+baochai(confident): "大家好，我是产品总监薛宝钗。"
+
+baochai(smile): "今年产品部的核心工作是'大观园'社交平台的设计。"
+
+baochai(normal): "我们完成了——"
+
+baochai(confident): "需求文档：最终版，共计512页。"
+
+: 台下传来倒吸凉气的声音。
+
+baochai(smile): "产品原型：V1到V17，共迭代17个版本。"
+
+baochai(normal): "用户调研报告：3份，共计200页。"
+
+baochai(thinking): "竞品分析报告：5份，共计150页。"
+
+: 台下有人举手。
+
+daiyu(sarcastic): "请问薛总监——"
+
+[show daiyu at right with fade]
+
+daiyu(cold): "你写了这么多文档，产品上线了吗？"
+
+baochai(thinking): "呃……"
+
+baochai(smile): "还在开发中。"
+
+daiyu(sarcastic): "也就是说，写了862页文档，产品一行代码都没上线？"
+
+baochai(serious): "好的产品需要充分的前期准备——"
+
+daiyu(angry): "你准备到地老天荒，用户都跑去用竞品了！"
+
+baochai(thinking): "可是需求还没确认完——"
+
+daiyu(cold): "因为你每天都在改需求！"
+
+daiyu(angry): "V1到V17，你改了17版！技术部每次刚开始开发你就改需求！"
+
+baochai(serious): "那是因为市场在变化——"
+
+daiyu(sarcastic): "市场变化没你变得快。"
+
+: 台下响起了压抑的笑声。
+
+baochai(smile): "好了好了，我会反思的。下一个！"
+
+[hide baochai with fade]
+[hide daiyu with fade]
+
+# ============================================================
+# Part 3: Daiyu's Tech Report
+# ============================================================
+
+[show daiyu at center with fade]
+
+daiyu(normal): "技术部，林黛玉。"
+
+daiyu(cold): "今年技术部的工作汇报，我用数据说话。"
+
+daiyu(normal): "代码提交：12,847次。其中我个人：8,203次。"
+
+daiyu(cold): "修复Bug：3,456个。其中因需求变更导致的：2,891个。"
+
+: 她看了一眼台下的薛宝钗。
+
+daiyu(sarcastic): "也就是说，83.6%的Bug是因为需求变更产生的。"
+
+: 薛宝钗假装在看手机。
+
+daiyu(normal): "代码审查：发现并阻止了47次直接push到master的行为。"
+
+daiyu(angry): "其中46次是贾宝玉干的。"
+
+: 台下爆发出笑声。
+
+[show baoyu at right with fade]
+
+baoyu(cry): "林工……能不能不要在年终大会上点名……"
+
+daiyu(cold): "事实而已。"
+
+daiyu(normal): "最后，技术部的核心成果——"
+
+daiyu(normal): "'大观园'平台的技术架构已经搭建完成。"
+
+daiyu(cold): "前端、后端、数据库、缓存系统、CI/CD流水线，全部就绪。"
+
+daiyu(sarcastic): "万事俱备，只欠——一个不会再改的需求文档。"
+
+[sfx laugh]
+
+: 薛宝钗的手机举得更高了。
+
+[hide daiyu with fade]
+[hide baoyu with fade]
+
+# ============================================================
+# Part 4: Baoyu's Report (the highlight)
+# ============================================================
+
+[stop bgm fadeOut=800]
+[bgm comedy volume=0.4 fadeIn=800]
+
+[show baoyu at center with fade]
+
+baoyu(nervous): "呃……大家好，我是……贾宝玉。"
+
+baoyu(thinking): "我是今年新入职的……初级前端工程师。"
+
+[show jiazheng at right with fade]
+
+jiazheng(serious): "说说你今年的工作成果。"
+
+baoyu(thinking): "好的……"
+
+baoyu(normal): "入职第一天，我写了一个'关于我们'页面。"
+
+baoyu(sad): "虽然被林工说像QQ空间……"
+
+: 台下笑声。
+
+baoyu(normal): "后来我学了TypeScript、React、CSS——"
+
+baoyu(thinking): "虽然学得不太好……"
+
+baoyu(normal): "但是！我完成了公司官网的改版！"
+
+baoyu(happy): "还有'大观园'平台的诗词展示模块！"
+
+baoyu(normal): "这个模块，我用了自己擅长的诗词知识——"
+
+baoyu(happy): "实现了古诗词的智能排版、平仄标注、和意境配图功能！"
+
+[show daiyu at left with fade]
+
+daiyu(normal): "……"
+
+daiyu(smirk): "这个模块，确实做得还行。"
+
+: 全场震惊——林黛玉居然夸人了。
+
+baoyu(surprised): "林工……你说什么？"
+
+daiyu(cold): "我说还行。别让我重复第三遍。"
+
+baoyu(happy): "谢谢林工！"
+
+jiazheng(surprised): "宝玉，你居然……真的在认真工作？"
+
+baoyu(normal): "爹……贾总，我知道我以前不争气。"
+
+baoyu(normal): "但是来了公司之后，我发现——"
+
+baoyu(happy): "原来把自己喜欢的东西和工作结合起来，是一件很开心的事。"
+
+baoyu(normal): "我喜欢诗词，而代码可以让诗词以新的方式呈现给更多人。"
+
+baoyu(happy): "这就是我想做的事。"
+
+[wait 500]
+
+jiazheng(surprised): "……"
+
+jiazheng(normal): "嗯。不错。"
+
+: 贾政说了"不错"两个字。
+
+: 这大概是贾宝玉三十年来第一次从父亲口中听到肯定。
+
+[sfx applause]
+
+[hide baoyu with fade]
+[hide daiyu with fade]
+[hide jiazheng with fade]
+
+# ============================================================
+# Part 5: Awards Ceremony
+# ============================================================
+
+[stop bgm fadeOut=800]
+[bgm chinese_classical volume=0.4 fadeIn=1000]
+
+: 述职结束，进入颁奖环节。
+
+[show jiazheng at center with fade]
+
+jiazheng(serious): "下面宣布年度表彰。"
+
+jiazheng(normal): "年度最佳员工——林黛玉。"
+
+[sfx applause]
+
+[show daiyu at left with fade]
+
+daiyu(normal): "谢谢。"
+
+daiyu(cold): "希望明年大家少往master上push垃圾代码。"
+
+: 简短有力，一如既往。
+
+jiazheng(normal): "年度最佳新人——贾宝玉。"
+
+[show baoyu at right with fade]
+
+baoyu(surprised): "我？！"
+
+[sfx applause]
+
+jiazheng(normal): "虽然你的起点很低……非常低……"
+
+jiazheng(serious): "但你的进步是有目共睹的。"
+
+baoyu(happy): "谢谢贾总！谢谢大家！"
+
+baoyu(cry): "我一定继续努力！"
+
+[hide daiyu with fade]
+[hide baoyu with fade]
+
+jiazheng(normal): "年度最佳管理者——王熙凤。"
+
+[show xifeng at left with fade]
+
+xifeng(happy): "谢谢！"
+
+jiazheng(serious): "虽然你花钱如流水。"
+
+xifeng(scheming): "那叫战略性投资~"
+
+jiazheng(disappointed): "……明年差旅费砍半。"
+
+xifeng(angry): "什么？！"
+
+[hide xifeng with fade]
+
+jiazheng(normal): "最后，特别贡献奖——刘姥姥。"
+
+[show liulaolao at right with fade]
+
+liulaolao(happy): "哎呦！还有我的奖？"
+
+jiazheng(normal): "感谢您对公司的投资和信任。"
+
+liulaolao(laugh): "客气客气！主要是你们食堂好吃！"
+
+liulaolao(happy): "明年我还来！"
+
+[sfx applause]
+
+[hide liulaolao with fade]
+[hide jiazheng with fade]
+
+# ============================================================
+# Part 6: Ending - Rooftop Scene
+# ============================================================
+
+[stop bgm fadeOut=1500]
+
+[bg rooftop with fade duration=1000]
+[bgm emotional volume=0.4 fadeIn=2000]
+
+: 颁奖结束后，天台。
+
+: 冬日的夜空格外清澈，星星像碎钻一样撒满天际。
+
+[show baoyu at center with fade]
+
+: 贾宝玉一个人站在天台上，手里拿着"最佳新人"的奖杯。
+
+: 其实就是一个3D打印的小奖杯，成本大概二十块钱。
+
+: 但他觉得，这是他这辈子收到的最好的礼物。
+
+baoyu(happy): "……"
+
+[show daiyu at right with fade]
+
+daiyu(normal): "又在天台发呆？"
+
+baoyu(happy): "林工！你也上来了？"
+
+daiyu(cold): "下面太吵了。王熙凤在唱KTV。"
+
+baoyu(surprised): "凤姐姐唱歌？"
+
+daiyu(sarcastic): "与其说是唱歌，不如说是噪音污染。"
+
+[wait 300]
+
+baoyu(normal): "林工，谢谢你。"
+
+daiyu(cold): "谢我什么？"
+
+baoyu(normal): "谢谢你教我写代码。虽然你每天都在骂我……"
+
+baoyu(happy): "但我知道你是为我好。"
+
+daiyu(normal): "……"
+
+daiyu(cold): "我只是不想让你拉低我们部门的平均水平。"
+
+baoyu(happy): "嘿嘿。"
+
+[wait 500]
+
+: 两人沉默了一会儿，看着远处的城市灯火。
+
+daiyu(normal): "宝玉。"
+
+baoyu(normal): "嗯？"
+
+daiyu(normal): "你那个诗词模块……"
+
+daiyu(smirk): "确实做得不错。"
+
+daiyu(cold): "我是认真的。不是客气。"
+
+baoyu(surprised): "林工……"
+
+daiyu(normal): "代码还有很多可以优化的地方。"
+
+daiyu(cold): "但是那个创意，是真的好。"
+
+daiyu(normal): "把古诗词和现代技术结合……"
+
+daiyu(smirk): "也许这就是'大观园'平台真正需要的东西。"
+
+baoyu(happy): "那我们一起把它做得更好吧！"
+
+daiyu(cold): "……"
+
+daiyu(normal): "嗯。"
+
+[wait 800]
+
+[show baochai at left with fade]
+
+baochai(smile): "你们两个在这儿说悄悄话呢？"
+
+daiyu(angry): "谁跟他说悄悄话了！"
+
+baoyu(happy): "宝姐姐！"
+
+baochai(happy): "恭喜你啊，最佳新人！"
+
+baoyu(happy): "谢谢！"
+
+baochai(smile): "明年'大观园'就要正式上线了。"
+
+baochai(confident): "我已经把需求文档精简到了——"
+
+daiyu(cold): "多少页？"
+
+baochai(thinking): "……120页。"
+
+daiyu(sarcastic): "进步了。虽然还是太长。"
+
+baochai(smile): "慢慢来嘛~"
+
+[show xifeng at far_left with fade]
+
+xifeng(happy): "你们都在这儿呢！快下来！"
+
+xifeng(laugh): "刘姥姥说要请大家吃火锅！"
+
+[show liulaolao at far_right with fade]
+
+liulaolao(happy): "走走走！我请客！庆祝庆祝！"
+
+liulaolao(laugh): "今年赚了不少分红，请得起！"
+
+baoyu(happy): "火锅！走走走！"
+
+daiyu(cold): "……我不太饿。"
+
+baochai(smile): "走啦走啦，别扭扭捏捏的~"
+
+daiyu(sarcastic): "谁扭扭捏捏了？我只是说不太饿而已。"
+
+daiyu(normal): "……走吧。"
+
+: 众人笑着走下天台。
+
+[hide baoyu with fade]
+[hide daiyu with fade]
+[hide baochai with fade]
+[hide xifeng with fade]
+[hide liulaolao with fade]
+
+[wait 1000]
+
+# ============================================================
+# Epilogue
+# ============================================================
+
+[bg title_bg with fade duration=2000]
+[stop bgm fadeOut=2000]
+[bgm main_theme volume=0.5 fadeIn=3000]
+
+: 荣国府科技有限公司的第一年，就这样在欢笑中结束了。
+
+[wait 500]
+
+: 贾宝玉从一个只会写诗的纨绔子弟，变成了一个会写诗也会写代码的程序员。
+
+: 虽然代码水平还是很菜。
+
+[wait 500]
+
+: 林黛玉依然是公司最厉害的工程师，依然每天骂人。
+
+: 但偶尔，她也会露出一丝微笑。
+
+[wait 500]
+
+: 薛宝钗的需求文档从512页精简到了120页。
+
+: 这是一个巨大的进步。虽然还是太长了。
+
+[wait 500]
+
+: 王熙凤继续当她的铁腕副总裁，花钱依然如流水。
+
+: 但不得不承认，没有她，这个公司早就散了。
+
+[wait 500]
+
+: 刘姥姥成了公司的吉祥物，每周来吃一次食堂。
+
+: 她的投资回报率——如果算上食堂的饭——已经回本了。
+
+[wait 500]
+
+: 妙玉还是那个妙玉，冷冷淡淡，只写Python。
+
+: 但她的代码，是全公司最优雅的。
+
+[wait 500]
+
+: 贾政依然严肃，依然对宝玉不满意。
+
+: 但那天在年终大会上，他说了"不错"两个字。
+
+: 这两个字，比任何奖杯都重。
+
+[wait 1000]
+
+: 新的一年即将到来。
+
+: "大观园"社交平台即将上线。
+
+: 新的故事，新的挑战，新的bug——
+
+: 都在等着他们。
+
+[wait 800]
+
+: 但无论如何——
+
+: 只要大家在一起，就没有解决不了的问题。
+
+: 就像那句话说的——
+
+[wait 500]
+
+: "花谢花飞花满天，Bug来Bug去Bug无边。"
+
+: "今朝有酒今朝醉，明日Bug明日debug。"
+
+[wait 1000]
+
+: 【红楼职场梦 · 第一季 · 完】
+
+[wait 1500]
+
+: 感谢游玩！
+
+: 第二季——"大观园上线风云"，敬请期待。
+
+[fade out color=#000000 duration=3000]
+
+[achievement unlock "season1_complete" title="红楼职场梦·完" desc="完成了第一季全部剧情"]
+
+[stop bgm fadeOut=3000]
+
+[end]

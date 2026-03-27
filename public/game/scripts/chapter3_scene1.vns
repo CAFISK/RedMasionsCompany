@@ -1,0 +1,273 @@
+# ============================================================
+# 红楼职场梦 - 第三回 场景一
+# 大观园团建风云 · 诗词编程大赛
+# ============================================================
+
+[chapter "第三回" subtitle="大观园团建风云" duration=4000]
+
+[fade in color=#000000 duration=1000]
+
+[bg park with fade duration=800]
+[bgm comedy volume=0.4 fadeIn=1000]
+[weather sakura intensity=0.6]
+
+: 获得投资后，王熙凤决定搞一次团建来庆祝。
+
+: 地点：城郊的大观园主题公园。
+
+: 活动：诗词编程大赛——用代码写诗，用诗写代码。
+
+: 这个活动创意来自薛宝钗，据说灵感来源于她那500页的需求文档。
+
+[show xifeng at center with fade]
+
+xifeng(happy): "各位！欢迎来到荣国府科技第一届团建活动！"
+
+xifeng(scheming): "今天的主题是——诗词编程大赛！"
+
+xifeng(normal): "规则很简单：两人一组，一个人写诗，一个人把诗变成代码。"
+
+xifeng(confident): "最后由刘姥姥担任评委，选出最佳组合！"
+
+[show liulaolao at right with fade]
+
+liulaolao(happy): "我当评委？我可不懂什么代码！"
+
+xifeng(scheming): "没关系！您就看哪个诗写得好就行！"
+
+liulaolao(laugh): "那行！我虽然没文化，但我会鼓掌！"
+
+[hide xifeng with fade]
+[hide liulaolao with fade]
+
+# --- Team formation ---
+
+: 分组环节。
+
+[show baoyu at left with fade]
+[show daiyu at right with fade]
+
+baoyu(happy): "林工！我们一组吧！"
+
+daiyu(cold): "为什么？"
+
+baoyu(normal): "因为我会写诗，你会写代码，完美搭配！"
+
+daiyu(sarcastic): "你确定你写的东西能叫诗？"
+
+baoyu(sad): "林工你就给个机会嘛……"
+
+daiyu(thinking): "……"
+
+daiyu(normal): "行吧。但是你要是写出什么'啊，代码，你是我的生命'之类的东西——"
+
+daiyu(angry): "我就把你的GitHub账号注销了。"
+
+baoyu(surprised): "不会不会！我写正经的！"
+
+[hide baoyu with fade]
+[hide daiyu with fade]
+
+[show baochai at center with fade]
+[show miaoyu at right with fade]
+
+: 另一边，薛宝钗和妙玉组成了一队。
+
+baochai(smile): "妙玉，我们合作吧？"
+
+miaoyu(cold): "随便。"
+
+miaoyu(annoyed): "不过我提前说好，我只写Python。"
+
+baochai(thinking): "为什么？"
+
+miaoyu(normal): "因为Python优雅、简洁、有禅意。"
+
+miaoyu(cold): "就像泡茶一样，讲究的是意境。"
+
+baochai(smile): "好吧，那我负责写诗，你负责代码。"
+
+miaoyu(annoyed): "你的诗不要太长。我讨厌冗余代码，也讨厌冗余的诗。"
+
+baochai(thinking): "可是我的需求文档都有500页了……"
+
+miaoyu(disgusted): "那是需求文档，不是诗。"
+
+[hide baochai with fade]
+[hide miaoyu with fade]
+
+# --- Competition begins ---
+
+[bg park with dissolve duration=500]
+
+: 比赛开始！
+
+: 第一组：贾宝玉 & 林黛玉
+
+[show baoyu at left with fade]
+[show daiyu at right with fade]
+
+xifeng(happy): "第一组，请开始你们的表演！"
+
+baoyu(happy): "我写了一首《咏Bug》！"
+
+baoyu(normal): "花谢花飞花满天，Bug来Bug去Bug无边。"
+
+baoyu(thinking): "今朝有酒今朝醉，明日Bug明日debug。"
+
+baoyu(happy): "侬今葬花人笑痴，他年葬Bug知是谁？"
+
+[sfx laugh]
+
+liulaolao(laugh): "哈哈哈哈！好！虽然我不懂Bug是啥，但听着挺押韵！"
+
+daiyu(sarcastic): "……我居然要把这个变成代码。"
+
+daiyu(normal): "算了，看我的。"
+
+: 林黛玉开始在笔记本电脑上飞速敲击。
+
+[wait 500]
+
+daiyu(normal): "完成了。"
+
+: 她展示了屏幕——
+
+: 一个精美的网页动画：花瓣从屏幕上方飘落，每片花瓣上写着一个Bug编号。
+
+: 花瓣落地后会变成一行行代码，然后被一个小人（程序员）用扫帚扫走。
+
+: 最后屏幕上显示："All bugs fixed. Until tomorrow."
+
+[sfx applause]
+
+liulaolao(amazed): "哎呦！这花瓣飘得真好看！"
+
+baoyu(surprised): "林工……你也太厉害了吧！"
+
+daiyu(smirk): "哼，这种程度的动画，十分钟就够了。"
+
+daiyu(cold): "倒是你那首诗……勉强及格吧。"
+
+baoyu(happy): "林工夸我了！"
+
+daiyu(angry): "我说的是勉强！"
+
+[hide baoyu with fade]
+[hide daiyu with fade]
+
+# --- Team 2 ---
+
+: 第二组：薛宝钗 & 妙玉
+
+[show baochai at left with fade]
+[show miaoyu at right with fade]
+
+baochai(confident): "我写了一首《咏服务器》。"
+
+baochai(normal): "好风凭借力，送我上云端。"
+
+baochai(smile): "不是浮云遮望眼，是AWS账单催人还。"
+
+[sfx laugh]
+
+liulaolao(laugh): "AWS是啥？"
+
+xifeng(scheming): "就是……云上的服务器，要花很多钱的那种。"
+
+liulaolao(amazed): "云上还能放服务器？那下雨了不会淋湿吗？"
+
+: 全场爆笑。
+
+miaoyu(cold): "我的代码。"
+
+: 妙玉展示了她的作品——
+
+: 一个极简风格的终端界面，黑底绿字。
+
+: 输入任何一句古诗，程序会自动分析平仄、韵脚，并生成对应的代码注释风格。
+
+: 比如输入"好风凭借力"，输出：
+
+: // Good wind leverages power — O(log n) with tail recursion
+
+miaoyu(smile): "代码即是诗，诗即是代码。"
+
+miaoyu(cold): "多余的装饰都是噪音。"
+
+baochai(thinking): "总觉得被内涵了……"
+
+[sfx applause]
+
+[hide baochai with fade]
+[hide miaoyu with fade]
+
+# --- Judging ---
+
+[show liulaolao at center with fade]
+
+liulaolao(thinking): "两组都挺好的……"
+
+liulaolao(confused): "但是我真的看不懂代码……"
+
+liulaolao(happy): "这样吧！我选那个花瓣飘飘的！因为好看！"
+
+[show daiyu at left with fade]
+[show baoyu at right with fade]
+
+baoyu(happy): "我们赢了！"
+
+daiyu(smirk): "是我的动画赢了，跟你的诗没关系。"
+
+baoyu(sad): "林工……"
+
+[show miaoyu at far_right with fade]
+
+miaoyu(annoyed): "以好看来评判代码，这是对技术的亵渎。"
+
+miaoyu(cold): "不过无所谓，真正的好代码不需要别人的认可。"
+
+[show baochai at far_left with fade]
+
+baochai(smile): "妙玉别生气啦，重在参与嘛~"
+
+miaoyu(disgusted): "我没生气。我只是觉得这个世界太浮躁了。"
+
+[choice]
+  "妙玉说得对，内在美更重要！" -> choice_miaoyu
+  "好看也很重要啊，用户体验嘛！" -> choice_ux
+  "要不我们再比一场？" -> choice_rematch
+[/choice]
+
+[label choice_miaoyu]
+[set miaoyu_affection += 3]
+miaoyu(smile): "……你倒是有点品味。"
+miaoyu(cold): "不过也仅此而已。"
+baoyu(happy): "妙玉姐姐夸我了！"
+miaoyu(annoyed): "别叫我姐姐。叫我妙工。"
+[jump after_competition]
+
+[label choice_ux]
+[set daiyu_affection += 2]
+daiyu(smirk): "看吧，连新人都懂用户体验的重要性。"
+miaoyu(cold): "肤浅。"
+baochai(smile): "好了好了，各有各的道理~"
+[jump after_competition]
+
+[label choice_rematch]
+xifeng(angry): "不比了不比了！时间到了！"
+xifeng(scheming): "下一个环节——团队烧烤！"
+liulaolao(happy): "烧烤好！我最爱吃烤红薯！"
+[jump after_competition]
+
+[label after_competition]
+
+[hide daiyu with fade]
+[hide baoyu with fade]
+[hide miaoyu with fade]
+[hide baochai with fade]
+[hide liulaolao with fade]
+
+[fade out color=#000000 duration=1000]
+
+[jump chapter3_scene2]
