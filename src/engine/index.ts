@@ -31,6 +31,9 @@ export class VNEngine implements VNEngineAPI {
     this.parser = new ScriptParser();
     this.state = new StateManager(this.eventBus);
     this.assets = new AssetManager();
+    if (config.assets) {
+      this.assets.setManifest(config.assets);
+    }
     this.audio = new AudioManager(this.eventBus);
     this.renderer = new RenderEngine(containerId, this.assets, this.eventBus);
     this.ui = new UIManager(

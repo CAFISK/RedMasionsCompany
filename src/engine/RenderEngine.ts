@@ -231,9 +231,11 @@ export class RenderEngine {
     this.hideCharacterElement(characterId);
 
     const expression = state.expression || 'normal';
-    const spriteSrc = config.sprites.expressions[expression]
-      || config.sprites.base
-      || this.assetManager.resolvePath('characters', `${characterId}/${expression}.png`);
+    const rawSrc = config.sprites.expressions[expression]
+      || config.sprites.base;
+    const spriteSrc = rawSrc
+      ? this.assetManager.resolvePath('characters', rawSrc)
+      : this.assetManager.resolvePath('characters', `${characterId}/${expression}.png`);
 
     const el = document.createElement('div');
     el.className = 'vn-character';
@@ -356,8 +358,10 @@ export class RenderEngine {
     const img = el.querySelector('img');
     if (!img) return;
 
-    const spriteSrc = config.sprites.expressions[expression]
-      || this.assetManager.resolvePath('characters', `${characterId}/${expression}.png`);
+    const rawSrc = config.sprites.expressions[expression];
+    const spriteSrc = rawSrc
+      ? this.assetManager.resolvePath('characters', rawSrc)
+      : this.assetManager.resolvePath('characters', `${characterId}/${expression}.png`);
 
     // Cross-dissolve effect
     img.style.transition = 'opacity 0.15s ease';

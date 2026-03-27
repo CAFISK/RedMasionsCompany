@@ -12,15 +12,15 @@
       "color": "#E74C3C",
       "sprites": {
         "expressions": {
-          "normal": "characters/baoyu/normal.png",
-          "happy": "characters/baoyu/happy.png",
-          "sad": "characters/baoyu/sad.png",
-          "angry": "characters/baoyu/angry.png",
-          "surprised": "characters/baoyu/surprised.png",
-          "thinking": "characters/baoyu/thinking.png",
-          "lazy": "characters/baoyu/lazy.png",
-          "cry": "characters/baoyu/cry.png",
-          "nervous": "characters/baoyu/nervous.png"
+          "normal": "baoyu/normal.png",
+          "happy": "baoyu/happy.png",
+          "sad": "baoyu/sad.png",
+          "angry": "baoyu/angry.png",
+          "surprised": "baoyu/surprised.png",
+          "thinking": "baoyu/thinking.png",
+          "lazy": "baoyu/lazy.png",
+          "cry": "baoyu/cry.png",
+          "nervous": "baoyu/nervous.png"
         }
       }
     },
@@ -30,14 +30,14 @@
       "color": "#9B59B6",
       "sprites": {
         "expressions": {
-          "normal": "characters/daiyu/normal.png",
-          "happy": "characters/daiyu/happy.png",
-          "sad": "characters/daiyu/sad.png",
-          "angry": "characters/daiyu/angry.png",
-          "sarcastic": "characters/daiyu/sarcastic.png",
-          "cry": "characters/daiyu/cry.png",
-          "cold": "characters/daiyu/cold.png",
-          "smirk": "characters/daiyu/smirk.png"
+          "normal": "daiyu/normal.png",
+          "happy": "daiyu/happy.png",
+          "sad": "daiyu/sad.png",
+          "angry": "daiyu/angry.png",
+          "sarcastic": "daiyu/sarcastic.png",
+          "cry": "daiyu/cry.png",
+          "cold": "daiyu/cold.png",
+          "smirk": "daiyu/smirk.png"
         }
       }
     },
@@ -47,14 +47,14 @@
       "color": "#F39C12",
       "sprites": {
         "expressions": {
-          "normal": "characters/baochai/normal.png",
-          "happy": "characters/baochai/happy.png",
-          "serious": "characters/baochai/serious.png",
-          "smile": "characters/baochai/smile.png",
-          "thinking": "characters/baochai/thinking.png",
-          "confident": "characters/baochai/confident.png",
-          "laugh": "characters/baochai/laugh.png",
-          "surprised": "characters/baochai/surprised.png"
+          "normal": "baochai/normal.png",
+          "happy": "baochai/happy.png",
+          "serious": "baochai/serious.png",
+          "smile": "baochai/smile.png",
+          "thinking": "baochai/thinking.png",
+          "confident": "baochai/confident.png",
+          "laugh": "baochai/laugh.png",
+          "surprised": "baochai/surprised.png"
         }
       }
     },
@@ -64,17 +64,17 @@
       "color": "#E91E63",
       "sprites": {
         "expressions": {
-          "normal": "characters/xifeng/normal.png",
-          "happy": "characters/xifeng/happy.png",
-          "angry": "characters/xifeng/angry.png",
-          "scheming": "characters/xifeng/scheming.png",
-          "laugh": "characters/xifeng/laugh.png",
-          "serious": "characters/xifeng/serious.png",
-          "smirk": "characters/xifeng/smirk.png",
-          "confident": "characters/xifeng/confident.png",
-          "smile": "characters/xifeng/smile.png",
-          "thinking": "characters/xifeng/thinking.png",
-          "surprised": "characters/xifeng/surprised.png"
+          "normal": "xifeng/normal.png",
+          "happy": "xifeng/happy.png",
+          "angry": "xifeng/angry.png",
+          "scheming": "xifeng/scheming.png",
+          "laugh": "xifeng/laugh.png",
+          "serious": "xifeng/serious.png",
+          "smirk": "xifeng/smirk.png",
+          "confident": "xifeng/confident.png",
+          "smile": "xifeng/smile.png",
+          "thinking": "xifeng/thinking.png",
+          "surprised": "xifeng/surprised.png"
         }
       }
     },
@@ -84,11 +84,11 @@
       "color": "#2C3E50",
       "sprites": {
         "expressions": {
-          "normal": "characters/jiazheng/normal.png",
-          "angry": "characters/jiazheng/angry.png",
-          "serious": "characters/jiazheng/serious.png",
-          "disappointed": "characters/jiazheng/disappointed.png",
-          "surprised": "characters/jiazheng/surprised.png"
+          "normal": "jiazheng/normal.png",
+          "angry": "jiazheng/angry.png",
+          "serious": "jiazheng/serious.png",
+          "disappointed": "jiazheng/disappointed.png",
+          "surprised": "jiazheng/surprised.png"
         }
       }
     },
@@ -98,13 +98,13 @@
       "color": "#27AE60",
       "sprites": {
         "expressions": {
-          "normal": "characters/liulaolao/normal.png",
-          "happy": "characters/liulaolao/happy.png",
-          "confused": "characters/liulaolao/confused.png",
-          "amazed": "characters/liulaolao/amazed.png",
-          "laugh": "characters/liulaolao/laugh.png",
-          "thinking": "characters/liulaolao/thinking.png",
-          "surprised": "characters/liulaolao/surprised.png"
+          "normal": "liulaolao/normal.png",
+          "happy": "liulaolao/happy.png",
+          "confused": "liulaolao/confused.png",
+          "amazed": "liulaolao/amazed.png",
+          "laugh": "liulaolao/laugh.png",
+          "thinking": "liulaolao/thinking.png",
+          "surprised": "liulaolao/surprised.png"
         }
       }
     },
@@ -114,11 +114,11 @@
       "color": "#1ABC9C",
       "sprites": {
         "expressions": {
-          "normal": "characters/miaoyu/normal.png",
-          "cold": "characters/miaoyu/cold.png",
-          "annoyed": "characters/miaoyu/annoyed.png",
-          "smile": "characters/miaoyu/smile.png",
-          "disgusted": "characters/miaoyu/disgusted.png"
+          "normal": "miaoyu/normal.png",
+          "cold": "miaoyu/cold.png",
+          "annoyed": "miaoyu/annoyed.png",
+          "smile": "miaoyu/smile.png",
+          "disgusted": "miaoyu/disgusted.png"
         }
       }
     }
@@ -155,17 +155,17 @@
   },
   "assets": {
     "backgrounds": {
-      "office_lobby": "backgrounds/office_lobby.png",
-      "office_open": "backgrounds/office_open.png",
-      "meeting_room": "backgrounds/meeting_room.png",
-      "ceo_office": "backgrounds/ceo_office.png",
-      "pantry": "backgrounds/pantry.png",
-      "server_room": "backgrounds/server_room.png",
-      "rooftop": "backgrounds/rooftop.png",
-      "park": "backgrounds/park.png",
-      "restaurant": "backgrounds/restaurant.png",
-      "conference_hall": "backgrounds/conference_hall.png",
-      "title_bg": "backgrounds/title_bg.png"
+      "office_lobby": "images/backgrounds/office_lobby.png",
+      "office_open": "images/backgrounds/office_open.png",
+      "meeting_room": "images/backgrounds/meeting_room.png",
+      "ceo_office": "images/backgrounds/ceo_office.png",
+      "pantry": "images/backgrounds/pantry.png",
+      "server_room": "images/backgrounds/server_room.png",
+      "rooftop": "images/backgrounds/rooftop.png",
+      "park": "images/backgrounds/park.png",
+      "restaurant": "images/backgrounds/restaurant.png",
+      "conference_hall": "images/backgrounds/conference_hall.png",
+      "title_bg": "images/backgrounds/title_bg.png"
     },
     "characters": {},
     "cg": {},
