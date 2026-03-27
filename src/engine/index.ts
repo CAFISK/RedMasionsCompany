@@ -180,7 +180,7 @@ export class VNEngine implements VNEngineAPI {
     // Try to load scene if not already loaded
     if (!this.isSceneLoaded(sceneId)) {
       try {
-        await this.sceneController.loadSceneFromURL(sceneId, `./scripts/${sceneId}.vns`);
+        await this.sceneController.loadSceneFromURL(sceneId, `./game/scripts/${sceneId}.vns`);
       } catch (err) {
         console.error(`[VNEngine] Failed to load scene: ${sceneId}`, err);
         return;

@@ -482,7 +482,7 @@ export class SceneController {
 
     // Try to load scene from URL
     try {
-      const url = `./scripts/${target}.vns`;
+      const url = `./game/scripts/${target}.vns`;
       await this.loadSceneFromURL(target, url);
       this.eventBus.emit('scene:exit', this.state.scene);
       this.running = false;
