@@ -166,16 +166,56 @@ export class RenderEngine {
    * Preload an image to ensure it's cached before use.
    * Returns immediately if the image is already cached.
    */
-  private preloadImage(src: string): Promise<void> {
-    return new Promise<void>((resolve) => {
+  private preloadImage(src: string): Promise<boolean> {
+    return new Promise<boolean>((resolve) => {
       const img = new Image();
-      img.onload = () => resolve();
+      img.onload = () => resolve(true);
       img.onerror = () => {
         console.warn(`[RenderEngine] Failed to preload image: ${src}`);
-        resolve(); // Don't block on error — let CSS background handle the fallback
+        resolve(false);
       };
       img.src = src;
     });
+  }
+
+  /**
+   * Resolve character sprite path with fallback to 'normal' expression.
+   * Returns the resolved src string that is confirmed loadable.
+   */
+  private async resolveCharacterSprite(
+    characterId: string,
+    expression: string,
+    config: CharacterConfig
+  ): Promise<string> {
+    // Try the requested expression first
+    const rawSrc = config.sprites.expressions[expression] || config.sprites.base;
+    const spriteSrc = rawSrc
+      ? this.assetManager.resolvePath('characters', rawSrc)
+      : this.assetManager.resolvePath('characters', `${characterId}/${expression}.png`);
+
+    const src = typeof spriteSrc === 'string' ? spriteSrc : '';
+    if (src) {
+      const ok = await this.preloadImage(src);
+      if (ok) return src;
+    }
+
+    // Fallback to 'normal' expression if the requested one doesn't exist
+    if (expression !== 'normal') {
+      console.warn(`[RenderEngine] Expression '${expression}' not found for '${characterId}', falling back to 'normal'`);
+      const normalRaw = config.sprites.expressions['normal'] || config.sprites.base;
+      const normalSrc = normalRaw
+        ? this.assetManager.resolvePath('characters', normalRaw)
+        : this.assetManager.resolvePath('characters', `${characterId}/normal.png`);
+      const normalStr = typeof normalSrc === 'string' ? normalSrc : '';
+      if (normalStr) {
+        const ok = await this.preloadImage(normalStr);
+        if (ok) return normalStr;
+      }
+    }
+
+    // Last resort: return original src even if it failed
+    console.warn(`[RenderEngine] No valid sprite found for '${characterId}', using original path`);
+    return src;
   }
 
   /**
@@ -250,11 +290,7 @@ export class RenderEngine {
     this.hideCharacterElement(characterId);
 
     const expression = state.expression || 'normal';
-    const rawSrc = config.sprites.expressions[expression]
-      || config.sprites.base;
-    const spriteSrc = rawSrc
-      ? this.assetManager.resolvePath('characters', rawSrc)
-      : this.assetManager.resolvePath('characters', `${characterId}/${expression}.png`);
+    const spriteSrc = await this.resolveCharacterSprite(characterId, expression, config);
 
     const el = document.createElement('div');
     el.className = 'vn-character';
@@ -274,7 +310,7 @@ export class RenderEngine {
     `;
 
     const img = document.createElement('img');
-    img.src = typeof spriteSrc === 'string' ? spriteSrc : '';
+    img.src = spriteSrc;
     img.style.cssText = `
       height: 100%;
       width: auto;
@@ -377,16 +413,13 @@ export class RenderEngine {
     const img = el.querySelector('img');
     if (!img) return;
 
-    const rawSrc = config.sprites.expressions[expression];
-    const spriteSrc = rawSrc
-      ? this.assetManager.resolvePath('characters', rawSrc)
-      : this.assetManager.resolvePath('characters', `${characterId}/${expression}.png`);
+    const spriteSrc = await this.resolveCharacterSprite(characterId, expression, config);
 
     // Cross-dissolve effect
     img.style.transition = 'opacity 0.15s ease';
     img.style.opacity = '0';
     await new Promise((r) => setTimeout(r, 150));
-    img.src = typeof spriteSrc === 'string' ? spriteSrc : '';
+    img.src = spriteSrc;
     img.style.opacity = '1';
   }
 
