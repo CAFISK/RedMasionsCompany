@@ -35,6 +35,7 @@ import type {
   StopCommand,
   FadeCommand,
   CharacterConfig,
+  CharacterState,
   GameConfig,
 } from './types';
 
@@ -377,6 +378,19 @@ export class SceneController {
     }
   }
 
+  private isSameCharacterState(current: CharacterState | undefined, target: CharacterState): boolean {
+    if (!current) return false;
+    return (
+      current.visible === target.visible &&
+      current.position === target.position &&
+      current.expression === target.expression &&
+      current.scale === target.scale &&
+      current.opacity === target.opacity &&
+      current.flipped === target.flipped &&
+      current.zIndex === target.zIndex
+    );
+  }
+
   private async executeShow(cmd: ShowCommand): Promise<void> {
     const charConfig = this.characters.get(cmd.character);
     if (!charConfig) {
@@ -390,22 +404,34 @@ export class SceneController {
     }
 
     const config = this.characters.get(cmd.character)!;
-    const state = this.state.getCharacterState(cmd.character) || {
-      id: cmd.character,
-      visible: true,
-      position: cmd.position || 'center',
-      expression: cmd.expression || 'normal',
-      scale: 1,
-      opacity: 1,
-      flipped: false,
-      zIndex: 10,
-    };
+    const existingState = this.state.getCharacterState(cmd.character);
+    const state: CharacterState = existingState
+      ? { ...existingState }
+      : {
+          id: cmd.character,
+          visible: true,
+          position: cmd.position || 'center',
+          expression: cmd.expression || 'normal',
+          scale: 1,
+          opacity: 1,
+          flipped: false,
+          zIndex: 10,
+        };
 
     state.visible = true;
     if (cmd.position) state.position = cmd.position;
     if (cmd.expression) state.expression = cmd.expression;
 
+    // Only update renderer when there is actually a state change.
+    const noChange = this.isSameCharacterState(existingState, state);
     this.state.setCharacterState(cmd.character, state);
+
+    if (noChange) {
+      // Character already displayed with same state; skip fade animation.
+      this.renderer.highlightCharacter(cmd.character);
+      return;
+    }
+
     await this.renderer.showCharacter(cmd.character, state, config, cmd.transition);
   }
 
@@ -563,13 +589,24 @@ export class SceneController {
 
   private async executeExpression(cmd: ExpressionCommand): Promise<void> {
     const charConfig = this.characters.get(cmd.character);
-    if (charConfig) {
-      this.state.setCharacterState(cmd.character, { expression: cmd.expression });
-      await this.renderer.updateCharacterExpression(cmd.character, cmd.expression, charConfig);
+    if (!charConfig) return;
+
+    const existingState = this.state.getCharacterState(cmd.character);
+    if (existingState?.expression === cmd.expression) {
+      // If expression unchanged, do nothing (avoid unnecessary fade)
+      return;
     }
+
+    this.state.setCharacterState(cmd.character, { expression: cmd.expression });
+    await this.renderer.updateCharacterExpression(cmd.character, cmd.expression, charConfig);
   }
 
   private executeMove(cmd: MoveCommand): void {
+    const existingState = this.state.getCharacterState(cmd.character);
+    if (existingState?.position === cmd.position) {
+      return;
+    }
+
     this.state.setCharacterState(cmd.character, { position: cmd.position });
     this.renderer.moveCharacter(cmd.character, cmd.position, cmd.duration);
   }

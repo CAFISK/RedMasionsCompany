@@ -414,13 +414,11 @@ export class RenderEngine {
     if (!img) return;
 
     const spriteSrc = await this.resolveCharacterSprite(characterId, expression, config);
+    if (!spriteSrc) return;
 
-    // Cross-dissolve effect
-    img.style.transition = 'opacity 0.15s ease';
-    img.style.opacity = '0';
-    await new Promise((r) => setTimeout(r, 150));
+    // Instant expression switch (no fade-out/in)
+    img.style.transition = '';
     img.src = spriteSrc;
-    img.style.opacity = '1';
   }
 
   /**
@@ -499,6 +497,9 @@ export class RenderEngine {
    * Fade screen in or out
    */
   async fadeScreen(direction: 'in' | 'out', color = '#000000', duration = 1000): Promise<void> {
+    // Avoid stacking multiple fade overlays over scene transitions.
+    this.clearFadeOverlays();
+
     const overlay = document.createElement('div');
     overlay.className = 'vn-fade-overlay';
     overlay.style.cssText = `
@@ -522,7 +523,6 @@ export class RenderEngine {
     if (direction === 'in') {
       overlay.remove();
     }
-    // For fade out, keep the overlay until fade in is called
   }
 
   /**
