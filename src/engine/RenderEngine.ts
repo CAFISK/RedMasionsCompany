@@ -129,6 +129,9 @@ export class RenderEngine {
   async setBackground(imageKey: string, transition?: TransitionConfig): Promise<void> {
     const src = this.assetManager.resolvePath('backgrounds', imageKey);
 
+    // Preload the image before applying it as CSS background to prevent black screen
+    await this.preloadImage(src);
+
     const newBg = document.createElement('div');
     newBg.className = 'vn-background';
     newBg.style.cssText = `
@@ -157,6 +160,22 @@ export class RenderEngine {
       this.currentBgElement.remove();
     }
     this.currentBgElement = newBg;
+  }
+
+  /**
+   * Preload an image to ensure it's cached before use.
+   * Returns immediately if the image is already cached.
+   */
+  private preloadImage(src: string): Promise<void> {
+    return new Promise<void>((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve();
+      img.onerror = () => {
+        console.warn(`[RenderEngine] Failed to preload image: ${src}`);
+        resolve(); // Don't block on error — let CSS background handle the fallback
+      };
+      img.src = src;
+    });
   }
 
   /**

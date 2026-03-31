@@ -308,9 +308,15 @@ export class SceneController {
     if (this.skipMode) {
       const settings = this.state.getSettings();
       if (settings.skipMode === 'all' || this.state.isLineRead(this.state.scene, this.currentIndex)) {
+        // Fast skip: show text instantly without waiting for click
+        this.ui.showDialogueInstant(charName, text, charColor);
         await new Promise((r) => setTimeout(r, 50));
         return;
       }
+      // Even for unread lines in skip mode, don't block — show instantly and auto-advance
+      this.ui.showDialogueInstant(charName, text, charColor);
+      await new Promise((r) => setTimeout(r, 200));
+      return;
     }
 
     // Show dialogue and wait for advance
@@ -333,6 +339,7 @@ export class SceneController {
     this.eventBus.emit('dialogue', { character: null, text });
 
     if (this.skipMode) {
+      this.ui.showDialogueInstant(null, text);
       await new Promise((r) => setTimeout(r, 50));
       return;
     }
@@ -356,6 +363,7 @@ export class SceneController {
     this.state.addHistory({ character: charName, text, timestamp: Date.now() });
 
     if (this.skipMode) {
+      this.ui.showDialogueInstant(charName, text, charColor);
       await new Promise((r) => setTimeout(r, 50));
       return;
     }

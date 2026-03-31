@@ -364,6 +364,25 @@ export class UIManager {
   }
 
   /**
+   * Show dialogue instantly without waiting for click (used in skip mode)
+   */
+  showDialogueInstant(character: string | null, text: string, color?: string): void {
+    this.stopTypewriter();
+    this.dialogueBox.style.display = 'block';
+    this.nameplate.textContent = character || '';
+    this.nameplate.style.color = color || '#fff';
+    this.fullText = text;
+    this.dialogueText.innerHTML = this.parseTextTags(text);
+    this.isTyping = false;
+
+    // Clear any pending advance callback so it doesn't leak
+    this.onAdvance = null;
+
+    const indicator = this.dialogueBox.querySelector('#vn-click-indicator') as HTMLElement;
+    if (indicator) indicator.style.display = 'none';
+  }
+
+  /**
    * Show narrator text (no character name)
    */
   showNarrator(text: string): Promise<void> {
